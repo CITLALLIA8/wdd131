@@ -1,54 +1,37 @@
 
-:root {
-  --color-bg: #fdfaf5;
-  --color-text: #1f2933;          
-  --color-primary: #1d3557;       
-  --color-primary-text: #ffffff;  
-  --color-accent: #f4a261;       
-  --color-card-bg: #ffffff;
-  --color-card-border: #d9e2ec;
-
-  --font-heading: "Merriweather", Georgia, serif;
-  --font-body: "Nunito", Arial, Helvetica, sans-serif;
-
-  --space: 1rem;
-  --max-width: 60rem;
-}
-
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: var(--font-body);
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
   font-size: 1.0625rem;
   line-height: 1.6;
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: #1f2933;
+  background-color: #fdfaf5;
 }
 
 h1,
 h2 {
-  font-family: var(--font-heading);
+  font-family: "Merriweather", Georgia, serif;
   line-height: 1.3;
-  color: var(--color-primary);
+  color: #1d3557;
 }
 
 
 header {
-  background-color: var(--color-primary);
-  color: var(--color-primary-text);
-  padding: calc(var(--space) * 1.5) var(--space) 0;
+  background-color: #1d3557;
+  color: #ffffff;
+  padding: 1.5rem 1rem 0;
   text-align: center;
 }
 
 #course-title {
   display: block;
-  font-family: var(--font-heading);
+  font-family: "Merriweather", Georgia, serif;
   font-size: 1.25rem;
-  margin-bottom: var(--space);
+  margin-bottom: 1rem;
 }
 
 
@@ -66,7 +49,7 @@ nav a {
   display: block;
   position: relative;
   padding: 0.75rem 0.5rem;
-  color: var(--color-primary-text);
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
 }
@@ -79,7 +62,7 @@ nav a::after {
   bottom: 0.25rem;
   width: 0;
   height: 3px;
-  background-color: var(--color-accent);
+  background-color: #f4a261;
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -90,36 +73,36 @@ nav a:focus-visible::after {
 }
 
 nav a:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid #f4a261;
   outline-offset: 2px;
 }
 
 
 main {
-  max-width: var(--max-width);
+  max-width: 60rem;
   margin: 0 auto;
-  padding: calc(var(--space) * 1.5) var(--space);
+  padding: 1.5rem 1rem;
 }
 
 h1 {
   text-align: center;
   font-size: 1.75rem;
-  margin: 0 0 calc(var(--space) * 1.5);
+  margin: 0 0 1.5rem;
 }
 
 
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: calc(var(--space) * 1.5);
+  gap: 1.5rem;
 }
 
 .card {
-  background-color: var(--color-card-bg);
-  border: 1px solid var(--color-card-border);
+  background-color: #ffffff;
+  border: 1px solid #d9e2ec;
   border-radius: 0.5rem;
-  padding: calc(var(--space) * 1.25);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px #c5cdd6;
 }
 
 .card h2 {
@@ -130,9 +113,9 @@ h1 {
 .card img {
   display: block;
   width: 100%;
-  max-width: 20rem;          
+  max-width: 20rem;
   height: auto;
-  margin: 0 auto var(--space); 
+  margin: 0 auto 1rem;
   border-radius: 0.375rem;
 }
 
@@ -142,9 +125,9 @@ h1 {
 
 
 footer {
-  background-color: var(--color-primary);
-  color: var(--color-primary-text);
-  padding: var(--space);
+  background-color: #1d3557;
+  color: #ffffff;
+  padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
 }
