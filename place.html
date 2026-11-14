@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Citlalli Ahumada">
+  <meta name="description" content="A page about Mexico: country data and current weather.">
+  <title>Mexico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Mexico</h1>
+  </header>
+
+  <main>
+   
+    <picture>
+      <source media="(min-width: 700px)" srcset="images/Mexico2.webp">
+      <img src="images/Mexico2.webp" alt="Landscape representing Mexico" width="600" height="900">
+    </picture>
+
+    <section class="data">
+      <h2>Data</h2>
+      <dl>
+        <dt>Area:</dt><dd>758,449 sq mi</dd>
+        <dt>Population:</dt><dd>128,455,567</dd>
+        <dt>Capital:</dt><dd>Mexico City</dd>
+        <dt>Languages:</dt><dd>Spanish</dd>
+        <dt>Currency:</dt><dd>Mexican Peso (MXN)</dd>
+        <dt>Time Zone:</dt><dd>UTC-6</dd>
+        <dt>Calling Code:</dt><dd>+52</dd>
+        <dt>Internet TLD:</dt><dd>.mx</dd>
+      </dl>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy weather icon" width="48" height="48">
+      <dl>
+        <dt>Temperature:</dt><dd><span id="temp">8</span> °C</dd>
+        <dt>Conditions:</dt><dd>Partly Cloudy</dd>
+        <dt>Wind:</dt><dd><span id="wind">12</span> km/h</dd>
+        <dt>Wind Chill:</dt><dd id="windchill"></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span>  Citlalli Ahumada 🌵 Mexico</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
