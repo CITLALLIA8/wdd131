@@ -1,0 +1,82 @@
+/* ---------- Global variables ---------- */
+:root {
+  --green: #006847;
+  --green-dark: #004d34;
+  --green-light: #e9f7ef;
+  --white: #ffffff;
+  --text: #1d2b24;
+  --border: #c9dfd3;
+  --font: "Trebuchet MS", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--white);
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-x: auto; /* keeps the table usable on very small screens */
+}
+
+/* ---------- Table ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 0.6rem;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 0.9rem 0.75rem;
+  border: 1px solid var(--border);
+  font-size: 1.1rem;
+}
+
+/* Header */
+thead th.title {
+  padding: 1.25rem;
+  background: var(--green-dark);
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+thead td.empty {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+}
+
+thead th[scope="col"] {
+  background: var(--green);
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+/* Row headers */
+tbody th {
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(odd) { background: var(--white); }
+tbody tr:nth-child(even) { background: var(--green-light); }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 480px) {
+  thead th.title { font-size: 1.2rem; }
+  thead th[scope="col"] { font-size: 1rem; }
+  th, td { padding: 0.7rem 0.4rem; font-size: 0.95rem; }
+}
