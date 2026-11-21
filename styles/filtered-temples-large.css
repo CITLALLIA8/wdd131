@@ -1,0 +1,20 @@
+@media (min-width: 700px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        width: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery > p {
+        grid-column: 1 / -1;
+    }
+}
