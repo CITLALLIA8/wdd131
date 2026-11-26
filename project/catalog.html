@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Browse the Malva Boutique catalog of women's clothing by category, with descriptions and prices.">
+<meta name="author" content="Citlalli Ahumada">
+<title>Malva Boutique | Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="44" height="44">Malva Boutique</a>
+<button id="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav aria-label="Main">
+<ul id="main-nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="catalog.html" class="active" aria-current="page">Catalog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<h1>Catalog</h1>
+<p>Choose a category to filter the clothing.</p>
+<div class="filters" role="group" aria-label="Filter by category">
+<button type="button" data-cat="all" aria-pressed="true">All</button>
+<button type="button" data-cat="tops" aria-pressed="false">Tops</button>
+<button type="button" data-cat="dresses" aria-pressed="false">Dresses</button>
+<button type="button" data-cat="pants-skirts" aria-pressed="false">Pants &amp; skirts</button>
+<button type="button" data-cat="jackets" aria-pressed="false">Jackets</button>
+</div>
+<p id="count" aria-live="polite"></p>
+<div class="grid" id="products"></div>
+</main>
+<footer>
+<p>&copy; <span id="year">2026</span> Malva Boutique | Citlalli Ahumada | Fictional site for WDD 131</p>
+<p>Last modified: <span id="modified"></span></p>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>

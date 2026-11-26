@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Malva Boutique is a fictional online store with modern and casual fashion for women: tops, dresses, pants, skirts and jackets.">
+<meta name="author" content="Citlalli Ahumada">
+<title>Malva Boutique | Modern Casual Fashion for Women</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="44" height="44">Malva Boutique</a>
+<button id="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav aria-label="Main">
+<ul id="main-nav">
+<li><a href="index.html" class="active" aria-current="page">Home</a></li>
+<li><a href="catalog.html">Catalog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="hero">
+<div>
+<h1>Modern fashion for every day</h1>
+<p>Soft, comfortable pieces that go from the office to the weekend.</p>
+<p><a class="btn" href="catalog.html">Shop new arrivals</a></p>
+</div>
+<img src="images/dress1.svg" alt="Rose dress, featured piece" width="240" height="240">
+</section>
+<h2>Shop by category</h2>
+<ul class="cats">
+<li><a href="catalog.html#tops">Tops</a></li>
+<li><a href="catalog.html#dresses">Dresses</a></li>
+<li><a href="catalog.html#pants-skirts">Pants &amp; skirts</a></li>
+<li><a href="catalog.html#jackets">Jackets</a></li>
+</ul>
+<h2>New arrivals</h2>
+<div class="grid" id="featured"></div>
+</main>
+<footer>
+<p>&copy; <span id="year">2026</span> Malva Boutique | Citlalli Ahumada | Fictional site for WDD 131</p>
+<p>Last modified: <span id="modified"></span></p>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>

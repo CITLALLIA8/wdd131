@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for Malva Boutique, a fictional online clothing store with modern and casual fashion for women.">
+    <meta name="author" content="Citlalli Ahumada">
+    <title>Malva Boutique | Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Malva Boutique logo: a stylized letter M shaped like a clothes hanger" width="64" height="64">
+        <div>
+            <h1>Malva Boutique</h1>
+            <p>Site Plan &ndash; Online Clothing Store &amp; Fashion Boutique</p>
+        </div>
+    </header>
+
+    <nav aria-label="Site plan sections">
+        <ul>
+            <li><a href="#site-name">Site Name</a></li>
+            <li><a href="#site-purpose">Site Purpose</a></li>
+            <li><a href="#scenarios">Scenarios</a></li>
+            <li><a href="#color-scheme">Color Scheme</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#wireframes">Wireframes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Malva Boutique</strong></p>
+            <ul>
+                <li>&ldquo;Malva&rdquo; is the Spanish word for mallow, a soft purple-pink flower. The name suggests a gentle, modern and feminine style.</li>
+                <li>It is short, easy to remember and easy to spell, which helps with branding and recognition.</li>
+                <li>The logo is a letter M drawn as a clothes hanger, using the plum and rose colors of the site.</li>
+            </ul>
+            <p>Optional domain availability: <code>malvaboutique.com</code></p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>Malva Boutique is a fictional online store that offers modern and casual fashion for women. The site provides:</p>
+            <ul>
+                <li>A home page that introduces the brand and highlights new arrivals.</li>
+                <li>A product catalog organized by clothing category (tops, dresses, pants and skirts, jackets), with images, descriptions and prices.</li>
+                <li>A contact page with a form where visitors can send questions to the store.</li>
+            </ul>
+            <p>The goal is to help visitors quickly find clothing they like, understand its details, and get in touch with the store.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <p>Questions a visitor from the target audience (women ages 18&ndash;40 who want comfortable, stylish clothing) might ask:</p>
+            <ul>
+                <li>What new casual outfits does the store have this season?</li>
+                <li>How much does a dress cost, and which sizes and colors are available?</li>
+                <li>Can I browse only jackets or only tops?</li>
+                <li>How can I ask the store a question about an order or a size?</li>
+            </ul>
+        </section>
+
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <p>The palette combines a deep plum with a soft lavender and a strong rose accent. All text and background pairs were chosen for strong contrast.</p>
+            <ul class="swatches">
+                <li>
+                    <span class="swatch plum" aria-hidden="true"></span>
+                    <div>
+                        <h3>Plum <code>#3B1E45</code></h3>
+                        <p>Headings, header and footer backgrounds, navigation links.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="swatch rose" aria-hidden="true"></span>
+                    <div>
+                        <h3>Rose <code>#B0124F</code></h3>
+                        <p>Accents: buttons, links, prices and the active navigation item.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="swatch lavender" aria-hidden="true"></span>
+                    <div>
+                        <h3>Lavender <code>#F5F0F8</code></h3>
+                        <p>Page background and the background of product cards.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="swatch ink" aria-hidden="true"></span>
+                    <div>
+                        <h3>Ink <code>#2A2530</code></h3>
+                        <p>Paragraph and body text.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="swatch white" aria-hidden="true"></span>
+                    <div>
+                        <h3>White <code>#FFFFFF</code></h3>
+                        <p>Text on dark backgrounds, form fields and wireframe boxes.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>Two fonts from Google Fonts will be used.</p>
+            <div class="font-sample">
+                <h3 class="heading-font">Fraunces &ndash; Headings</h3>
+                <p class="heading-font">Modern fashion for every day</p>
+                <p>Used for the site name, page titles (<code>h1</code>), section headings (<code>h2</code>, <code>h3</code>) and product names. Weights: 600 and 700.</p>
+            </div>
+            <div class="font-sample">
+                <h3 class="heading-font">Karla &ndash; Body text</h3>
+                <p>Soft, comfortable pieces that go from the office to the weekend.</p>
+                <p>Used for paragraphs, navigation, prices, buttons and form labels. Weights: 400 and 700.</p>
+            </div>
+            <p>Fallbacks: <code>Georgia, serif</code> for Fraunces and <code>Arial, sans-serif</code> for Karla.</p>
+        </section>
+
+        <section id="wireframes">
+            <h2>Wireframes</h2>
+            <p>Layout of the home page in mobile and desktop views. The boxes only represent the content and its position.</p>
+
+            <div class="wireframes">
+                <figure>
+                    <figcaption>Mobile view (single column)</figcaption>
+                    <div class="wf wf-mobile" role="img" aria-label="Mobile wireframe: header with logo and menu button, hero image with heading and button, category list stacked vertically, new arrivals stacked vertically, footer.">
+                        <div class="box dark">Header: logo + menu button</div>
+                        <div class="box hero">Hero image<br>Heading + &ldquo;Shop new arrivals&rdquo; button</div>
+                        <div class="box">Category: Tops</div>
+                        <div class="box">Category: Dresses</div>
+                        <div class="box">Category: Pants &amp; skirts</div>
+                        <div class="box">Category: Jackets</div>
+                        <div class="box tall">New arrival 1<br>image, name, price</div>
+                        <div class="box tall">New arrival 2<br>image, name, price</div>
+                        <div class="box dark">Footer: links + copyright</div>
+                    </div>
+                </figure>
+
+                <figure>
+                    <figcaption>Desktop view (wide)</figcaption>
+                    <div class="wf wf-desktop" role="img" aria-label="Desktop wireframe: header with logo and horizontal navigation, wide hero with text on the left and image on the right, four categories in one row, three new arrivals in one row, footer.">
+                        <div class="box dark">Header: logo | Home &ndash; Catalog &ndash; Contact</div>
+                        <div class="row">
+                            <div class="box hero">Heading + text<br>&ldquo;Shop new arrivals&rdquo; button</div>
+                            <div class="box hero">Hero image</div>
+                        </div>
+                        <div class="row four">
+                            <div class="box">Tops</div>
+                            <div class="box">Dresses</div>
+                            <div class="box">Pants &amp; skirts</div>
+                            <div class="box">Jackets</div>
+                        </div>
+                        <div class="row three">
+                            <div class="box tall">New arrival 1<br>image, name, price</div>
+                            <div class="box tall">New arrival 2<br>image, name, price</div>
+                            <div class="box tall">New arrival 3<br>image, name, price</div>
+                        </div>
+                        <div class="box dark">Footer: links + contact + copyright</div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Citlalli Ahumada | WDD 131 | Fictional site for a class project</p>
+    </footer>
+</body>
+</html>
